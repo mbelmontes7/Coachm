@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 const Navbar = () =>
 {
@@ -14,11 +15,10 @@ const Navbar = () =>
 
     // Array containing navigation items
     const navItems = [
-        { id: 1, text: 'Home' },
-        { id: 2, text: 'About' },
-        { id: 3, text: 'Services' },
-        { id: 4, text: 'Book a section' },
-
+        { id: 1, text: 'Home', href: '/Home' },
+        { id: 2, text: 'About', href: '/about' },
+        { id: 3, text: 'Services', href: '/services' },
+        { id: 4, text: 'Book a section', href: '/Booking' },
     ];
 
     return (
@@ -33,6 +33,7 @@ const Navbar = () =>
                         key={item.id}
                         className='px-7 hover:bg-[#00df9a]  shadow-inner rounded-lg m-2 cursor-pointer duration-300 hover:text-black *:'
                     >
+                        {/* // TODO: add links in the navbar */}
                         {item.text}
                     </li>
                 ))}
@@ -60,6 +61,7 @@ const Navbar = () =>
                         key={item.id}
                         className='p-1 border-b rounded-sm hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'
                     >
+                        {/* // TODO: add links in the navbar */}
                         {item.text}
                     </li>
                 ))}
@@ -69,3 +71,4 @@ const Navbar = () =>
 };
 
 export default Navbar;
+
