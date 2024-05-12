@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from './Components/Navbar'; // assuming Navbar.jsx is in the same directory
 import logo from './assets/logo.svg'; // Import SVG as an image source
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './pages/Home';
+// import About from './pages/About';
 
-import Booking from './pages/Booking';
+// import Booking from './pages/Booking';
 
 function App()
 {

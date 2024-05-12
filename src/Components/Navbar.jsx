@@ -15,7 +15,7 @@ const Navbar = () =>
 
     // Array containing navigation items
     const navItems = [
-        { id: 1, text: 'Home', href: '/Home' },
+        { id: 1, text: 'Home', href: '/' },
         { id: 2, text: 'About', href: '/about' },
         { id: 3, text: 'Services', href: '/services' },
         { id: 4, text: 'Book a section', href: '/Booking' },
@@ -29,13 +29,7 @@ const Navbar = () =>
             {/* Desktop Navigation */}
             <ul className='hidden md:flex'>
                 {navItems.map(item => (
-                    <li
-                        key={item.id}
-                        className='px-7 hover:bg-[#00df9a]  shadow-inner rounded-lg m-2 cursor-pointer duration-300 hover:text-black *:'
-                    >
-                        {/* // TODO: add links in the navbar */}
-                        {item.text}
-                    </li>
+                    <Link to={item.href} key={item.id} className='px-7 hover:bg-[#00df9a]  shadow-inner rounded-lg m-2 cursor-pointer duration-300 hover:text-black *:'>{item.text}</Link>
                 ))}
             </ul>
 
